@@ -1,0 +1,81 @@
+table {
+  height:100%;
+  width: 100%;
+  overflow-y: auto;
+  text-transform: capitalize;
+  margin: auto;
+  background-color: white;
+
+}
+table ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  .fixed-header{
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+   
+}
+
+.fixed-header tbody{
+  display:block;
+  width: 100%;
+  overflow: auto;
+  height: 100px;
+  border: 1px solid  #e6f2ff ;
+  height: 100%;
+}
+
+.fixed-header thead tr {
+   display: block;
+}
+
+.fixed-header thead {
+  background: #007bff;
+  color:#fff;
+}
+
+.fixed-header th, .fixed-header td {
+  padding: 5px;
+  text-align: left;
+  width: 200px;
+  border: 1px solid  #e6f2ff ;
+}
+   
+
+.table-container {
+  padding: 10px;
+  height: 40%;
+  margin-top: 10px;
+}
+
+.selected-row {
+  background-color: #e6f2ff;
+}
+
+.test-button{
+    margin: auto;
+    background-color: #cce5ff;
+    color: #006fe6;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0px;
+
+}
+.send {
+    background-color: #007bff;
+    color: white;
+    width: 140px;
+    }
+
+.successful {
+    color: #009900;
+}
+
+.failed {
+    color: #e60000;
+}
+

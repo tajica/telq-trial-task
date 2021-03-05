@@ -1,0 +1,39 @@
+<div class="table-container" fxLayoutGap="10px">
+  <table class="fixed-header">
+    <thead>
+      <tr>
+        <th fxFlex>countries</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        
+        *ngFor="let row of countries"
+        id="{{ row.name }}"
+        (click)="selectRow(row)"
+      >
+        <td fxFlex>{{ row.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="buttons" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+  <button class="test-button send" (click)="sendTestList()">Send tests</button>
+  <button class="test-button" (click)="clearHistory()">Clear history</button>
+</div>
+<div class="table-container" fxLayoutGap="10px">
+  <table class="fixed-header">
+    <thead>
+      <tr>
+        <th fxFlex>country</th>
+        <th fxFlex>test status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of results">
+        <td fxFlex>{{ row.countryName }}</td>
+        <td fxFlex class="{{ row.testStatus.toLowerCase() }}">{{ row.testStatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
